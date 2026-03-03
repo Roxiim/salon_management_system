@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.roxana.salonoop.controller.AdminDashboardController">
+   <children>
+      <ListView fx:id="usersList" layoutX="25.0" layoutY="66.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="32.0" layoutY="34.0" text="All users:">
+         <font>
+            <Font name="Javanese Text" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="stylistNameField" layoutX="266.0" layoutY="64.0" promptText="Stylist Name" />
+      <TextField fx:id="stylistSpecializationField" layoutX="266.0" layoutY="110.0" promptText="Stylist Specialization" />
+      <Button layoutX="479.0" layoutY="330.0" mnemonicParsing="false" onAction="#handleCreateStylist" text="Create Stylist" />
+      <Label fx:id="statusLabel" layoutX="351.0" layoutY="258.0" />
+      <ListView fx:id="servicesListView" layoutX="266.0" layoutY="158.0" prefHeight="151.0" prefWidth="251.0" />
+   </children>
+</AnchorPane>

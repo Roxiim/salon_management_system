@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="561.0" prefWidth="670.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.roxana.salonoop.controller.CustomerDashboardController">
+   <children>
+      <ListView fx:id="serviceList" layoutX="14.0" layoutY="49.0" prefHeight="189.0" prefWidth="215.0" />
+      <Label layoutX="25.0" layoutY="2.0" text="Available services: ">
+         <font>
+            <Font name="Javanese Text" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="63.0" layoutY="250.0" mnemonicParsing="false" onAction="#onSelectService" text="Select service" />
+      <Label layoutX="262.0" layoutY="2.0" text="Available Stylists: ">
+         <font>
+            <Font name="Javanese Text" size="16.0" />
+         </font>
+      </Label>
+      <ListView fx:id="stylistList" layoutX="253.0" layoutY="49.0" prefHeight="189.0" prefWidth="205.0" />
+      <Label layoutX="480.0" layoutY="14.0" prefHeight="46.0" prefWidth="98.0" text="Choose Date:">
+         <font>
+            <Font name="Javanese Text" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="481.0" layoutY="85.0" text="Choose Time:">
+         <font>
+            <Font name="Javanese Text" size="16.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datePicker" layoutX="472.0" layoutY="47.0" />
+      <ComboBox fx:id="timeComboBox" layoutX="471.0" layoutY="118.0" prefHeight="25.0" prefWidth="175.0" />
+      <Button layoutX="500.0" layoutY="199.0" mnemonicParsing="false" onAction="#onMakeAppointment" text="Make Appointment" />
+      <Label fx:id="statusLabel" layoutX="205.0" layoutY="253.0" prefHeight="19.0" prefWidth="265.0" textFill="#067400" />
+      <Label layoutX="35.0" layoutY="293.0" text="My appointments: ">
+         <font>
+            <Font name="Javanese Text" size="16.0" />
+         </font>
+      </Label>
+      <ListView fx:id="appointmentsList" layoutX="22.0" layoutY="339.0" prefHeight="97.0" prefWidth="438.0" />
+      <Button fx:id="cancelAppointmentBtn" layoutX="481.0" layoutY="410.0" mnemonicParsing="false" onAction="#onCancelAppointment" text="Cancel appointment" />
+      <ComboBox fx:id="statusFilterBox" layoutX="25.0" layoutY="490.0" prefWidth="150.0" />
+      <Button layoutX="203.0" layoutY="490.0" mnemonicParsing="false" onAction="#onFilterByStatus" text="Apply Filter" />
+      <Button layoutX="313.0" layoutY="490.0" mnemonicParsing="false" onAction="#onClearFilter" text="Clear" />
+      <Label layoutX="35.0" layoutY="444.0" text="Filter Appointments by status">
+         <font>
+            <Font name="Javanese Text" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
