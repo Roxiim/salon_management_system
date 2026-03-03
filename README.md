@@ -31,7 +31,7 @@ logic.
 - Persistent data storage via database integration
 - User-friendly graphical interface built with JavaFX
 
-![Customerdashboard](screenshots/Screenshot 2026-03-03 222745.png)
+![Customerdashboard](screenshots/customer)
 
 ## Database
 The system uses a relational database to:
