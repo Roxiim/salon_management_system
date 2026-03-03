@@ -33,6 +33,10 @@ logic.
 
 ![Customerdashboard](screenshots/customer)
 
+![](screenshots/admin)
+
+![](screenshots/stylist)
+
 ## Database
 The system uses a relational database to:
 - Store client records
